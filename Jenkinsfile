@@ -1,7 +1,7 @@
 pipeline{
     agent any
     triggers {
-        pollSCM("*****") // wil trigger wheneve there is a change in VC (pull from VC to check every minute)
+        pollSCM("* * * * *") // wil trigger wheneve there is a change in VC (pull from VC to check every minute)
     }
     stages{
         stage("MyFirstState"){
